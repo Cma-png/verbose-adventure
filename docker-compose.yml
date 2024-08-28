@@ -1,0 +1,66 @@
+# version: '3.8'
+
+# services:
+#   backend:
+#     build: ./backend
+#     container_name: backend_service
+#     ports:
+#       - "8000:8000"
+#     volumes:
+#       - ./backend/src:/app/src
+#     environment:
+#       - OLLAMA_BASE_URL=http://localhost:11434
+#       - OLLAMA_EMBED_MODEL=mxbai-embed-large
+#       - OLLAMA_LLM_MODEL=llama3.1:8b
+
+#   frontend:
+#     image: streamlit
+#     container_name: frontend_service
+#     volumes:
+#       - ./frontend:/app
+#     ports:
+#       - "8501:8501"
+#     command: ["streamlit", "run", "streamlit_ui.py"]
+
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: document_search_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/src:/app/src
+    environment:
+      - PINECONE_API_KEY=your_pinecone_api_key
+    depends_on:
+      - pinecone
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: document_search_frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  pinecone:
+    image: pinecone/pinecone-server:latest
+    container_name: pinecone_server
+    environment:
+      - PINECONE_API_KEY=your_pinecone_api_key
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
