@@ -1,25 +1,6 @@
 # verbose-adventure
 Document Search and Analysis Tool
 
+https://github.com/user-attachments/assets/b4c57aeb-0472-4f86-ab6d-d1c283106137
 
-document_search_tool/
-├── backend/
-│   ├── src/
-│   │   ├── main.py
-│   │   ├── utils/
-│   │   │   ├── pdf_loader.py
-│   │   │   ├── text_cleaner.py
-│   │   ├── services/
-│   │   │   ├── embedding_service.py
-│   │   │   ├── vector_db_service.py
-│   │   ├── models/
-│   │   │   ├── document_model.py
-│   │   ├── routers/
-│   │   │   ├── document.py
-│   │   │   ├── pinecone.py
-│   ├── config.py
-│   └── requirements.txt
-├── docker/
-│   ├── Dockerfile
-│   ├── docker-compose.yml
-└── README.md
+
