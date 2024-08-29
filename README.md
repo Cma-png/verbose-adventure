@@ -2,7 +2,12 @@
 
 A powerful tool for document search and analysis using advanced language models. Upload PDFs, convert them to vectors, and query your documents with ease.
 
-https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3
+<div align="center">
+  <video width="320" height="240" controls>
+    <source src="https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ## Features
 
@@ -10,9 +15,9 @@ https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3
 - **Advanced Querying**: Leverage the Ollama model for intelligent document querying.
 - **User-Friendly Interface**: Built with Streamlit for a seamless user experience.
 
-<div style="display: flex; justify-content: center;">
-  <img width="200" alt="Untitled" src="https://github.com/user-attachments/assets/3ca2d5a2-dfec-47b6-96c4-47d25fe66359">
-  <img width="200" alt="Untitled2" src="https://github.com/user-attachments/assets/008503f9-00f4-4442-90b3-f49ce2357b56">
+<div align="center">
+  <img width="250" alt="Untitled" src="https://github.com/user-attachments/assets/3ca2d5a2-dfec-47b6-96c4-47d25fe66359">
+  <img width="250" alt="Untitled2" src="https://github.com/user-attachments/assets/008503f9-00f4-4442-90b3-f49ce2357b56">
 </div>
 
 ## Quick Start
