@@ -11,8 +11,8 @@ https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3
 - **User-Friendly Interface**: Built with Streamlit for a seamless user experience.
 
 <div style="display: flex; justify-content: center;">
-  <img width="350" alt="Untitled" src="https://github.com/user-attachments/assets/3ca2d5a2-dfec-47b6-96c4-47d25fe66359">
-  <img width="350" alt="Untitled2" src="https://github.com/user-attachments/assets/008503f9-00f4-4442-90b3-f49ce2357b56">
+  <img width="200" alt="Untitled" src="https://github.com/user-attachments/assets/3ca2d5a2-dfec-47b6-96c4-47d25fe66359">
+  <img width="200" alt="Untitled2" src="https://github.com/user-attachments/assets/008503f9-00f4-4442-90b3-f49ce2357b56">
 </div>
 
 ## Quick Start
