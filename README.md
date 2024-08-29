@@ -10,9 +10,10 @@ https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3
 - **Advanced Querying**: Leverage the Ollama model for intelligent document querying.
 - **User-Friendly Interface**: Built with Streamlit for a seamless user experience.
 
-<img width="1130" alt="Untitled" src="https://github.com/user-attachments/assets/3ca2d5a2-dfec-47b6-96c4-47d25fe66359">
-<img width="1118" alt="Untitled2" src="https://github.com/user-attachments/assets/008503f9-00f4-4442-90b3-f49ce2357b56">
-
+<div style="display: flex; justify-content: center;">
+  <img width="400" alt="Untitled" src="https://github.com/user-attachments/assets/3ca2d5a2-dfec-47b6-96c4-47d25fe66359">
+  <img width="400" alt="Untitled2" src="https://github.com/user-attachments/assets/008503f9-00f4-4442-90b3-f49ce2357b56">
+</div>
 
 ## Quick Start
 
@@ -43,24 +44,10 @@ https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3
 ```
 3. Replace "your_llm_model_name" and "your_embedding_model_name" with the actual names of the models you downloaded.
 
-#### 3. Create a Pinecone Account and API Key
 
-1. Sign up for a Pinecone account at [Pinecone](https://www.pinecone.io/).
-2. Create an index and generate your API key.
-3. Open `frontend/streamlit_ui.py`.
-4. Locate the section in the sidebar where the API key and index are handled:
 
-```python
-   api_key = st.text_input("Pinecone API Key", type="password")
-   index = st.text_input("Pinecone Index Name")
-```
-5.	Replace the placeholders with your actual Pinecone API key and index name, or enter them directly in the Streamlit app when prompted. Alternatively, you can hard-code these values directly in the script:
-```python
-api_key = "your_pinecone_api_key"
-index = "your_pinecone_index_name"
-```
-
-### 4.1. Build and Run with Docker
+### 4. Build and Run
+#### 4.1. With Docker
 
 1. Ensure Docker is installed on your system. 
 2.	From the project root, run:
@@ -70,7 +57,7 @@ docker-compose up --build
 3.	Access the app at `http://localhost:8501`.
 
 
-### 4.2. Without Docker
+#### 4.2. Without Docker
 1. Install dependencies:
 ```bash
 pip install -r backend/requirements.txt
@@ -84,3 +71,14 @@ python backend/scripts/main.py
 streamlit run frontend/streamlit_ui.py
 ```
 4. 	Open `http://localhost:8501` to use the app.
+
+### 5. Enter Pinecone API Key and Index to Use
+After starting the Streamlit frontend, enter the Pinecone API key and index:
+<img width="388" alt="Untitled" src="https://github.com/user-attachments/assets/4c65e441-d134-4713-9677-e3885b5323c1">
+
+### 6. Upload your document pdf
++ Push the buttom to convert your pdf to vector and store to the vectorDB
++ Now, you may start to ask the llm question about your pdf
+<img width="1045" alt="Untitled 2" src="https://github.com/user-attachments/assets/a41c9e3a-c9e3-4082-ad8a-e37652142a4e">
+
+
