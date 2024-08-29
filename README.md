@@ -2,12 +2,7 @@
 
 A powerful tool for document search and analysis using advanced language models. Upload PDFs, convert them to vectors, and query your documents with ease.
 
-<div align="center">
-  <video width="320" height="240" controls>
-    <source src="https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+https://github.com/user-attachments/assets/1161b9f2-7f42-4cc5-b15e-da7f1f6401c3
 
 ## Features
 
