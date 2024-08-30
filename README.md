@@ -1,4 +1,4 @@
-# Document Search and Analysis Tool
+# Research Paper Q&A Tool
 
 A powerful tool for document search and analysis using advanced language models. Upload PDFs, convert them to vectors, and query your documents with ease.
 
